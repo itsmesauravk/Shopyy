@@ -1,6 +1,7 @@
 /* Navbar Container */
 .navbar {
     display: flex;
+    height: 70px;
     flex-direction: column;
     justify-content: center;
     align-items: center;

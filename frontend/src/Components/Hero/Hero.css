@@ -1,14 +1,8 @@
 /* Hero Container */
-.main-hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* background: linear-gradient(180deg, #fde1ff , #e1ffea22 60%); */
-    
-}
+
 .hero {
     display: flex;
-    width: 70%;
+   
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(180deg, #fde1ff , #e1ffea22 60%);
