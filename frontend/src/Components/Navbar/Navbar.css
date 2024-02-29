@@ -1,0 +1,115 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEF2F4;
+  }
+  .main {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 10px 20px;
+  }
+  
+  /* Logo Section */
+  .nav-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .nav-logo p {
+    font-size: 1.2em;
+  }
+  
+  /* Navigation Menu */
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+    color: #333; /* Adjusted the color */
+  }
+
+  /* Add styles for the hr element */
+  .nav-menu hr {
+    border: none;
+    width: 100%;
+    height: 3px;
+    border: 10px;
+    background-color: #D14D72;
+  }
+  
+  
+  
+  /* Login and Cart Section */
+  .nav-login-cart {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+  }
+  
+  .nav-login-cart button {
+    background-color: #FFABAB;
+    /* color: #fff; */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .nav-login-cart button:hover {
+    background-color: #D14D72;
+  }
+  
+  .nav-login-cart img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+  }
+  
+  /* Cart Count */
+  .nav-cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #D14D72;
+    color: #fff;
+    border-radius: 50%;
+    padding: 2px 4px;
+    font-size: 0.8em;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-menu {
+      margin-top: 10px;
+    }
+  
+    .nav-menu li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }

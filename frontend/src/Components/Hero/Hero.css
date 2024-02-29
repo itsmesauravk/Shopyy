@@ -1,0 +1,76 @@
+/* Hero Container */
+.main-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background: linear-gradient(180deg, #fde1ff , #e1ffea22 60%); */
+    
+}
+.hero {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(180deg, #fde1ff , #e1ffea22 60%);
+    
+    padding: 40px;
+}
+/* Left Section */
+.hero-left {
+    max-width: 50%;
+}
+
+.hero-left h2 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.hand-hand-icon {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 4rem;
+}
+
+p {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #D14D72;
+}
+
+.hand-hand-icon img {
+    width: 70px;
+    height: 70px;
+}
+
+.hero-latest-btn {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.hero-latest-btn{
+    display: flex;
+    width: fit-content;
+    gap: 10px;
+    background-color: #D14D72;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.hero-latest-btn img {
+    width: 20px;
+    height: 10px;
+}
+
+/* Right Section */
+.hero-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}

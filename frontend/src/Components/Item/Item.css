@@ -1,0 +1,57 @@
+/* Main Container */
+
+ /* Popular Section */
+ .popular {
+     display: flex;
+     width: 70%;
+     flex-direction: column;
+ }
+ 
+ /* Item Container */
+ .item {
+     background-color: #fff;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     padding: 10px;
+     text-align: center;
+     border-radius: 8px;
+     transition: box-shadow 0.3s ease-in-out; /* Add transition for smooth hover effect */
+ }
+ 
+ .item:hover {
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Adjusted shadow on hover */
+ }
+ 
+ .item img {
+     width: 100%;
+     height: auto;
+     border-radius: 8px;
+     margin-bottom: 10px;
+ }
+ 
+ .item p {
+     font-size: 1.2em;
+     color: #333;
+ }
+ 
+ /* Item Price Section */
+ .item-price {
+     display: flex;
+     justify-content: space-around;
+     margin-top: 10px;
+ }
+ 
+ .item-price-new p,
+ .item-price-old p {
+     font-size: 1.2em;
+     font-weight: bold;
+ }
+ 
+ .item-price-new p {
+     color: #D14D72; /* New price color */
+ }
+ 
+ .item-price-old p {
+     text-decoration: line-through;
+     color: #888; /* Old price color */
+ }
+ 

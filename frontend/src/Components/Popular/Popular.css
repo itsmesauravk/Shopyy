@@ -1,0 +1,36 @@
+/* Main Container */
+.main-popular {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+
+/* Popular Section */
+.popular {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.popular h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.popular hr {
+    width: 150px;
+    border-radius: 10px;
+    border: 2px solid #D14D72; /* Horizontal line color */
+    margin: 0 auto 20px auto;
+}
+
+/* Popular Items */
+.popular-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
