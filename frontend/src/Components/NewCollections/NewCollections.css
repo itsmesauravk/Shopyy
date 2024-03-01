@@ -1,0 +1,25 @@
+/* New Collection Container */
+.newcollection {
+    text-align: center;
+    margin: 20px;
+}
+
+.newcollection h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.newcollection hr {
+    width: 50px;
+    border: 2px solid #D14D72; /* Horizontal line color */
+    margin: 0 auto 20px auto;
+}
+
+/* Collections Grid */
+.collections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
