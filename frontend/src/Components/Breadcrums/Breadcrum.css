@@ -1,0 +1,15 @@
+/* Breadcrumb Container */
+.breadcrum {
+    font-size: 1em;
+    color: #555;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Breadcrumb Arrow Icon */
+.breadcrum img {
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+}

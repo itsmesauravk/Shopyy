@@ -1,0 +1,116 @@
+/* Shop Category Container */
+.shop-category {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+   
+    
+  }
+  
+  /* Shop Category Banner */
+  .shop-category img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Shop Category Index and Short */
+  .shopcategory-indexShort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .shopcategory-indexShort p {
+    font-size: 1.2em;
+  }
+  
+  .shopcategory-indexShort span {
+    font-weight: bold;
+  }
+  
+  /* Shop Category Sort */
+  .shopcategory-short {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .shopcategory-short img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+  
+  /* Shop Category Products */
+  .shopcategory-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Item Container Styles (You can reuse the Item component styles here) */
+  .shopcategory-products .item {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  .shopcategory-products .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .shopcategory-products .item p {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Item Price Section */
+  .shopcategory-products .item-price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .shopcategory-products .item-price-new p,
+  .shopcategory-products .item-price-old p {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .shopcategory-products .item-price-new {
+    color: #D14D72; /* New price color */
+  }
+  
+  .shopcategory-products .item-price-old {
+    text-decoration: line-through;
+    color: #888; /* Old price color */
+  }
+  
+  /* Shop Category Load More Button */
+.shopcategory-loadmore {
+    margin-top: 3rem;
+    background-color: #D14D72;
+    width: 10rem;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .shopcategory-loadmore:hover {
+    background-color: #9e3b5e;
+  }
+  

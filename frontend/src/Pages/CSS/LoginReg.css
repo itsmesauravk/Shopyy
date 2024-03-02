@@ -1,0 +1,80 @@
+/* Login and Register Container */
+.loginRegister {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  /* Login and Register Form Container */
+  .loginReg-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .loginReg-container h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Fields */
+  .loginReg-field input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  /* Continue Button */
+  .loginReg-container button {
+    background-color: #D14D72;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .loginReg-container button:hover {
+    background-color: #9e3b5e;
+  }
+  
+  /* Login Link */
+  .loginReg-login {
+    margin-top: 10px;
+    color: #888;
+    font-size: 20px;
+  }
+  
+  .loginReg-login span {
+    color: #D14D72;
+    cursor: pointer;
+  }
+  
+  /* Terms and Privacy Checkbox */
+  .loginReg-agree {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .loginReg-agree input {
+    margin-right: 10px;
+  }
+  
+  .loginReg-agree p {
+    font-size: 0.9em;
+    color: #888;
+  }
+  
+  
