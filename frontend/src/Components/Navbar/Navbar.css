@@ -67,7 +67,7 @@
   }
   
   .nav-login-cart button {
-    background-color: #FFABAB;
+    background-color: #D14D72;
     /* color: #fff; */
     padding: 8px 16px;
     border: none;
@@ -76,7 +76,7 @@
     cursor: pointer;
   }
   .nav-login-cart button:hover {
-    background-color: #D14D72;
+    background-color:#FFABAB;
   }
   
   .nav-login-cart img {
@@ -91,11 +91,16 @@
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #D14D72;
+    background-color: black;
+    width: 20px;
+    height: 20px;
     color: #fff;
     border-radius: 50%;
-    padding: 2px 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 0.8em;
+  
   }
   
   /* Responsive Styles */
