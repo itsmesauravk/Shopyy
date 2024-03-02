@@ -1,0 +1,68 @@
+/* Related Products Container */
+.related-products {
+    text-align: center;
+    margin-top:80px;
+    width: 70%;
+}
+
+.related-products h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.related-products hr {
+    width: 50px;
+    border: 2px solid #D14D72;
+    margin: 0 auto 20px auto;
+}
+
+/* Related Products Items */
+.relatedproducts-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Item Container (Reuse your existing Item component styles here if needed) */
+.item {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.item-price {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.item-price-new p,
+.item-price-old p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.item-price-new p {
+    color: #D14D72;
+}
+
+.item-price-old {
+    text-decoration: line-through;
+    color: #888;
+}
