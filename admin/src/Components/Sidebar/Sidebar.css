@@ -1,0 +1,39 @@
+.sidebar {
+    background-color: #EED3D9; 
+    color: white; 
+    width: 200px;
+    height: 100vh;
+    padding: 20px; 
+  }
+  
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; 
+    cursor: pointer; 
+    color: black;
+    background-color: #F5E8DD;
+    padding: 20px;
+    border-radius: 10px;
+
+  
+    /* Adjust styling for the hover effect */
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .sidebar-item:hover {
+    background-color: #9e3b5e; 
+  }
+  
+  .add-product {
+    width: 30px; /* Adjust the width of the icon as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add margin between the icon and text as needed */
+  }
+  
+  /* Optional: Style the link text */
+  .sidebar-item p {
+    margin: 0; /* Remove default margin for paragraphs */
+    font-size: 16px; /* Adjust the font size as needed */
+  }
+  
