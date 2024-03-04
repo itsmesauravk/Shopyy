@@ -1,0 +1,79 @@
+.addproduct {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .addproduct-categoryfield,
+  .addproduct-inputfiled
+    {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .addproduct-itemfield,
+  .addproduct-categoryfield,
+  .addproduct-inputfiled {
+    margin-bottom: 20px;
+  }
+  
+  .addproduct-itemfield p,
+  .addproduct-inputfiled p,
+  .addproduct-categoryfield p {
+    margin: 0;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .addproduct-price,
+  .addproduct-inputfiled {
+    display: flex;
+    gap: 14px;
+  }
+  
+  .add-product-selector,
+  .addproduct-btn {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .add-product-selector {
+    cursor: pointer;
+  }
+  
+  .upload-area {
+    width: 90px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .addproduct-btn {
+    background-color: #E493B3;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .addproduct-btn:hover {
+    background-color: #8E7AB5;
+  }
+  
+  /* Styling for input fields */
+  input[type="text"],
+  input[type="file"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+  
+  /* Optional: Add more specific styling for different input types if needed */
+  
