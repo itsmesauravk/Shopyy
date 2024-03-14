@@ -20,7 +20,7 @@ if (connectDB){
     console.log("Successfull Database Connection ^_^")
 }
 
-
+//for default checking
 app.get("/",(req,res)=>{
     res.send("Hello World")
 })
