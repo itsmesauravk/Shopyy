@@ -26,6 +26,7 @@ app.get("/",(req,res)=>{
 })
 
 //Image storage
+// image will store in device only path will be sotored in database
 const storage = multer.diskStorage({
     destination:'./upload/images',
     filename:(req,file,cb)=>{
