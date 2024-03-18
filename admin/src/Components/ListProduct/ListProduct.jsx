@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './ListProduct.css'
+import cross_icon from '../../assets/cross_icon.png'
 
 const ListProduct = () => {
 
@@ -10,6 +11,10 @@ const ListProduct = () => {
     .then((res)=>res.json())
     .then((data)=>{setAllProduct(data)})
   }
+
+  useEffect(()=>{
+    fetchInfo();
+  },[])
   return (
     <div className='listproduct'>
         <h1>All Product List</h1>
@@ -23,7 +28,19 @@ const ListProduct = () => {
         </div>
         <div className="listproduct-allproduct">
           <hr />
+          {allProduct.map((product,index)=>{
+            return(
+              <div key={index} className="listproduct-format-main listproduct-product">
+                <img src={product.image} alt="product" className='listproduct-product-image'/>
+                <p>{product.name}</p>
+                <p>{product.old_price}</p>
+                <p>{product.new_price}</p>
+                <p>{product.category}</p>
+                <img className='listproduct-remove-icom' src="" alt="" />
+              </div>
+            )
 
+          }}
         </div>
     </div>
   )
