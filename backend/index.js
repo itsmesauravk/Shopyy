@@ -1,6 +1,7 @@
 
 
 //continued from Mon Mar 18 2023
+
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
@@ -127,6 +128,86 @@ app.get('/allproducts',async(req,res)=>{
     let products = await Product.find({});
     res.json({products})
 
+})
+
+
+// schema for creating users
+const User = mongoose.model("User",{
+    name:{
+        type:String,
+        required:true
+    },
+    email:{
+        type:String,
+        unique:true,
+        required:true
+    },
+    password:{
+        type:String,
+        required:true
+    },
+    cartData:{
+        type:Object,
+    },
+    date:{
+        type:Date,
+        default:Date.now
+    }
+
+})
+
+//for user Registration
+app.post("/signup",async(req,res)=>{
+    const {name,email,password} = req.body;
+    let check = await User.findOne({email:email});
+    if(check){
+        return res.status(400).json({success:false,message:"User Already Exists"});
+    }
+    let cart = {}
+    for(let i=1;i<=300;i++){
+        cart[i] = 0;
+    }
+    const user = new User({
+        name:name,
+        email:email,
+        password:password,
+        cartData:cart
+    })
+    await user.save();
+
+    const data = {
+        user:{
+            id:user.id
+        }
+    }
+    //creating token
+    const  token = jwt.sign(data,'secret_ecom')
+    res.json({success:true,token})
+})
+
+//creating user login
+app.post("/login",async(req,res)=>{
+    const {email,password} = req.body;
+    let user = await User.findOne({email:email});
+    if(user){
+        const checkPass = password === user.password;
+        if(checkPass){
+            const data = {
+                user:{
+                    id:user.id
+                }
+            }
+            const token = jwt.sign(data,'secret_ecom');
+            res.json({success:true,token});
+        }
+        else{
+            res.json({success:false,message:"Invalid Password"});
+        }
+
+    }else{
+        res.json({success:false,message:"User Not Found"});
+    
+    }
 })
 
 
