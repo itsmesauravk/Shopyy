@@ -210,6 +210,46 @@ app.post("/login",async(req,res)=>{
     }
 })
 
+// creating API for new collection data
+app.get('/newcollections',async(req,res)=>{
+    let products = await Product.find({});
+    let new_collections = products.slice(1).slice(-8);
+    res.json({new_collections})
+})
+
+//creating API for popular in women
+app.get('/popularinwomen',async(req,res)=>{
+    let products = await Product.find({category:"women"})
+    let popular_in_women = products.slice(0,4)
+    res.json(popular_in_women)
+})
+
+//creating middleware to fetch user
+const fetchuser = async(req,res,next) =>{
+    const token = req.header('auth-token');
+    if(!token){
+        res.status(401).json({errors:"Invalid token"})
+    }
+    else{
+        try {
+            const data = jwt.verify(token,'secret_ecom')
+            req.user = data.user;
+            next();
+        } catch (error) {
+            res.status(401).json({errors:"Please authenticate using valid token!"})
+        }
+    }
+}
+
+//creating endpoint for adding card 
+app.post('/addtocart',fetchuser,async(req,res)=>{
+    
+    let userdata = await User.findOne({_id:req.user.id})
+    userdata.cartData[req.body.itemId] += 1
+    await User.findOneAndUpdate({_id:req.user.id},{cartData:userdata.cartData})
+    res.json({message:"Added to cart."})
+})
+
 
 app.listen(port,console.log(`Server is running on port ${port}`))
 
