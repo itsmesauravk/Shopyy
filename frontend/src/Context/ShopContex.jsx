@@ -11,7 +11,7 @@ const getDefaultCart = (products) => {
 };
 
 
-const [cartItems, setCartItems] = useState(() => getDefaultCart(all_product));
+// const [cartItems, setCartItems] = useState(() => getDefaultCart(all_product));
 
 
 const ShopContextProvider = (props) => {
@@ -34,6 +34,9 @@ const ShopContextProvider = (props) => {
             .then((data)=>{setCartItems(data)})
         }
     },[])
+
+const [cartItems, setCartItems] = useState(() => getDefaultCart(all_product));
+
 
 
     const addToCart = (itemId) => {
